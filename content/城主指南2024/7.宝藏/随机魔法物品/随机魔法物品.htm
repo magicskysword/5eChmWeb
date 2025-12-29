@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机魔法物品</title>
+    <style>
+html,body { 
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<p><strong><font color="#800000" size="5">随机魔法物品 Random Magic Items</font></strong></p>
+<p>你将使用本节中的表格来随机地决定角色在你的冒险中找到的魔法物品。表格首先按宝藏主题（如怪物手册Monster 
+Manual中所述）排序，然后按物品稀有度排序。如果物品与每个主题都不相关，则掷 1d4 来决定要掷哪个表：<br/>掷 1 时，掷奥秘表；<br/>掷 2 
+时，掷武备；<br/>掷 3 时，掷器具；<br/>掷 4 时，掷圣物。</p>
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '随机魔法物品'}, '*');
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>城市地点</title>
+    <style>
+html,body { 
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<p><strong><font color="#800000" size="5">城市地点 City Locations</font></strong></p>
+<p>这里提到的地点可以作为你战役的一处不错的起点。你可以使用它们作为范例来让你游戏中新出现的地点更加鲜活。</p>
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '城市地点'}, '*');
+        }
+</script>
+</body>
+</html>

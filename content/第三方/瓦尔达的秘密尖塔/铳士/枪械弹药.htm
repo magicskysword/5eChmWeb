@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>枪械弹药</title>
+    <link href="../../../style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<h3>枪械弹药 Firearm Ammunition</h3>
+<p>具有弹药词条的武器需要弹药。武器描述会指定其使用的弹药类型。以下弹药表列出了枪械使用的新弹药类型以及购买时可获得的数量。</p>
+<p>枪械弹药被使用后即摧毁。</p>
+<table class="center">
+<tr><th width="160">类型</th><th width="80">数量</th><th width="80">重量</th><th width="80">花费</th></tr>
+<tr bgcolor="#eeeeee"><td>射弹Shot</td><td>10</td><td>2磅</td><td>1GP</td></tr>
+<tr><td>子弹Bullets</td><td>10</td><td>1.5磅</td><td>3GP</td></tr>
+<tr bgcolor="#eeeeee"><td>霰弹Shells</td><td>10</td><td>1.5磅</td><td>5GP</td></tr>
+<tr><td>信号弹Flares</td><td>5</td><td>5磅</td><td>5GP</td></tr>
+<tr bgcolor="#eeeeee"><td>加农炮弹Cannonballs</td><td>5</td><td>10磅</td><td>25GP</td></tr>
+</table>
+
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '枪械弹药'}, '*');
+        }
+</script>
+</body>
+</html>

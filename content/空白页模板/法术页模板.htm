@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法术页模板</title>
+    <style>
+html,body { 
+	font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+    color: #704cd9;
+    margin-bottom: -20px;
+	font-size: 24px;
+}
+</style>
+</head>
+<body>
+
+<h4> 法术名｜English</h4>
+<p><em>学派与环阶（仪式；所属、职业、法术、列表）</em> <br/><strong>施法时间：</strong> XXX<br/><strong>施法距离：</strong> 
+YYY<br/><strong>法术成分：</strong>V、S、M（具体成分）<br/><strong>持续时间：</strong>ZZZ<br/>   
+          
+    法术描述文</p>
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '法术页模板'}, '*');
+        }
+</script>
+</body>
+</html>

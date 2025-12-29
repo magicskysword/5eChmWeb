@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机船只</title>
+    <link href="../../../style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<p>随机船只<span lang="EN-US">RANDOM  SHIPS</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">角色们并非唯一在远海航行的航海者。他们遇到的每一艘新的船都提供了冒险的机会。以下规则可以用于生成在开阔海域中遇到的其他船只。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="2">船只种类<span lang="EN-US">SHIP  TYPE</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">角色们遇到的船只种类决定了船舶的数据，以及它能承载多少生物或货物。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>船只种类<span lang="EN-US">SHIP  TYPES</span></b></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm">
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">d100</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>船只<span lang="EN-US">Ship</span></b></p></td></tr>
+<tr style="mso-yfti-irow: 1">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">01-09</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">划艇<span lang="EN-US">Rowboat</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 2">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">10-25</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">龙骨船<span lang="EN-US">Keelboat</span></p></td></tr>
+<tr style="mso-yfti-irow: 3">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">26-38</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">单帆长船<span lang="EN-US">Longship</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 4">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">39-60</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">帆船<span lang="EN-US">Sailing ship</span></p></td></tr>
+<tr style="mso-yfti-irow: 5">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">61-79</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">桨帆船<span lang="EN-US">Galley</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 6; mso-yfti-lastrow: yes">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">80-00</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">战舰<span lang="EN-US">Warship</span></p></td></tr></table></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US" style="COLOR: black; mso-color-alt: windowtext"></span> </p>
+<p class="2">船只名称<span lang="EN-US">SHIP  NAME</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">每艘船都有一个名字，你可以自行创造或者使用船只名称表格随机生成。根据表格掷骰——一次形容词，一次名词——来创造一个船名。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>船只名称<span lang="EN-US">SHIP  NAMES</span></b></p>
+<p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm">
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">d20</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>形容词<span lang="EN-US">Adjective</span></b></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>名词<span lang="EN-US">Noun</span></b></p></td></tr>
+<tr style="mso-yfti-irow: 1">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">1</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">美丽<span lang="EN-US">Beautiful</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">冒险<span lang="EN-US">Adventure</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 2">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">2</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">坏脾气<span lang="EN-US">Bilious</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">藤壶<span lang="EN-US">Barnacle</span></p></td></tr>
+<tr style="mso-yfti-irow: 3">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">3</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">大胆<span lang="EN-US">Bold</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">争吵者<span lang="EN-US">Brawler</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 4">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">4</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">冰冷<span lang="EN-US">Cold</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">魔鬼<span lang="EN-US">Devil</span></p></td></tr>
+<tr style="mso-yfti-irow: 5">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">5</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">时髦<span lang="EN-US">Dandy</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">龙<span lang="EN-US">Dragon</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 6">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">6</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">拂晓<span lang="EN-US">Dawn</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">宝石<span lang="EN-US">Gem</span></p></td></tr>
+<tr style="mso-yfti-irow: 7">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">7</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">醉酒<span lang="EN-US">Drunken</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">花<span lang="EN-US">Flower</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 8">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">8</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">火热<span lang="EN-US">Fiery</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">小丑<span lang="EN-US">Jester</span></p></td></tr>
+<tr style="mso-yfti-irow: 9">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">9</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">狂怒的<span lang="EN-US">Furious</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">克拉肯<span lang="EN-US">Kraken</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 10">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">10</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">呲牙<span lang="EN-US">Grinning</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">利维坦<span lang="EN-US">Leviathan</span></p></td></tr>
+<tr style="mso-yfti-irow: 11">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">11</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">无畏的<span lang="EN-US">Interpid</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">美人鱼<span lang="EN-US">Mermaid</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 12">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">12</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">快乐的<span lang="EN-US">Jolly</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">王子<span lang="EN-US">Prince</span></p></td></tr>
+<tr style="mso-yfti-irow: 13">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">13</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">迷雾<span lang="EN-US">Misty</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">公主<span lang="EN-US">Princess</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 14">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">14</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">喧闹的<span lang="EN-US">Rambunctious  </span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">复仇<span lang="EN-US">Revenge</span></p></td></tr>
+<tr style="mso-yfti-irow: 15">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">15</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">赤红<span lang="EN-US">Red</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">军刀<span lang="EN-US">Saber</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 16">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">16</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">皇家<span lang="EN-US">Royal</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">鲨鱼<span lang="EN-US">Shark</span></p></td></tr>
+<tr style="mso-yfti-irow: 17">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">17</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">咸的<span lang="EN-US">Salty</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">潮汐<span lang="EN-US">Tide</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 18">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">18</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">罪恶的<span lang="EN-US">Sinful</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">宝藏<span lang="EN-US">Treasure</span></p></td></tr>
+<tr style="mso-yfti-irow: 19">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">19</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">虚幻的<span lang="EN-US">Twilight  
+    </span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">胜利<span lang="EN-US">Victory</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 20; mso-yfti-lastrow: yes">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">20</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">热情的<span lang="EN-US">Zealous</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">流浪者<span lang="EN-US">Wanderer</span></p></td></tr></table></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="2">船员<span lang="EN-US">CREWS</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">除非你另有安排，否则每一艘在海上遇到的船只都有全部的船员和足够在船只航行期间维持船员和所有乘客生命的食物与水。你可以使用下面“船只目的”部分中的建议生成船员或采用船只类型所建议的船员。</p>
+<p class="10">船员成员名字<span lang="EN-US">CREW  MEMBER  NAMES</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">如果你需要快速生成船员的姓名，下表可以方便地生成一个由两部分组成，适用于任何船员，无关其性别和种族的名字。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>船员名字表格<span lang="EN-US">CREW  MEMBER  NAME</span></b></p>
+<p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm">
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">d20</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>前半<span lang="EN-US">First Half</span></b></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>后半<span lang="EN-US">Second Half</span></b></p></td></tr>
+<tr style="mso-yfti-irow: 1">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">1</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">咸<span lang="EN-US">Salty</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">胡子<span lang="EN-US">Beard</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 2">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">2</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">老<span lang="EN-US">Ol</span>’</p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">眼<span lang="EN-US">Eye</span></p></td></tr>
+<tr style="mso-yfti-irow: 3">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">3</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">银<span lang="EN-US">Silver</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">铜板<span lang="EN-US">Copper</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 4">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">4</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">金<span lang="EN-US">Golden</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">鱼<span lang="EN-US">Fish</span></p></td></tr>
+<tr style="mso-yfti-irow: 5">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">5</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">黑<span lang="EN-US">Black</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">鲸鱼<span lang="EN-US">Whale</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 6">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">6</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">蓝<span lang="EN-US">Blue</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">狗<span lang="EN-US">Dog</span></p></td></tr>
+<tr style="mso-yfti-irow: 7">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">7</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">柔软的<span lang="EN-US">Silky</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">杂种<span lang="EN-US">Cur</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 8">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">8</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">无情的<span lang="EN-US">Heartless</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">手指<span lang="EN-US">Finger</span></p></td></tr>
+<tr style="mso-yfti-irow: 9">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">9</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">细雨般的<span lang="EN-US">Drizzly</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">补丁<span lang="EN-US">Patches</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 10">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">10</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">饥渴的<span lang="EN-US">Thirsty</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">钩子<span lang="EN-US">Hook</span></p></td></tr>
+<tr style="mso-yfti-irow: 11">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">11</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">古怪的<span lang="EN-US">Rum</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">盐<span lang="EN-US">Salt</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 12">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">12</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">阴郁的<span lang="EN-US">Gloomy</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">耗子<span lang="EN-US">Rat</span></p></td></tr>
+<tr style="mso-yfti-irow: 13">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">13</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">英俊的<span lang="EN-US">Handsome</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">魅力<span lang="EN-US">Charm</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 14">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">14</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">小<span lang="EN-US">Wee</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">禽兽<span lang="EN-US">Beast</span></p></td></tr>
+<tr style="mso-yfti-irow: 15">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">15</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">聪明<span lang="EN-US">Clever</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">魔鬼<span lang="EN-US">Devil</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 16">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">16</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">丑<span lang="EN-US">Ugly</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">骗子<span lang="EN-US">Liar</span></p></td></tr>
+<tr style="mso-yfti-irow: 17">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">17</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">漂亮<span lang="EN-US">Pretty</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">天使<span lang="EN-US">Angel</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 18">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">18</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">迷失的<span lang="EN-US">Lost</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">血<span lang="EN-US">Blood</span></p></td></tr>
+<tr style="mso-yfti-irow: 19">
+<td style="WIDTH: 90.45pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">19</span></b></p></td>
+<td style="WIDTH: 5cm; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">疯<span lang="EN-US">Mad</span></span></p></td>
+<td style="WIDTH: 155.95pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">地图<span lang="EN-US">Maps</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 20; mso-yfti-lastrow: yes">
+<td style="WIDTH: 90.45pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="121">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">20</span></b></p></td>
+<td style="WIDTH: 5cm; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="189">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">穷<span lang="EN-US">Poor</span></p></td>
+<td style="WIDTH: 155.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="208">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">桅杆<span lang="EN-US">Mast</span></p></td></tr></table></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="2">船只目的<span lang="EN-US">SHIP  PURPOSE</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">每艘船都有其航行的理由，可以在船只目的表上滚动或选择。每个目的都在表格后面描述。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>船只目的<span lang="EN-US">SHIP  PURPOSE</span></b></p>
+<p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm">
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">d100</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>目的<span lang="EN-US">Purpose</span></b></p></td></tr>
+<tr style="mso-yfti-irow: 1">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">01-17</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">运送货物<span lang="EN-US">Cargo</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 2">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">18-34</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">运送乘客<span lang="EN-US">Passenger</span></p></td></tr>
+<tr style="mso-yfti-irow: 3">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">35-51</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">捕鱼<span lang="EN-US">Fishing</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 4">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">52-68</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">军用<span lang="EN-US">Military</span></p></td></tr>
+<tr style="mso-yfti-irow: 5">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">69-85</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">海盗<span lang="EN-US">Piracy</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 6">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">86-95</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">佣兵<span lang="EN-US">Mercenary</span></p></td></tr>
+<tr style="mso-yfti-irow: 7; mso-yfti-lastrow: yes">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">96-00</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">幽灵船<span lang="EN-US">Ghost</span></span></p></td></tr></table></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="10">货物<span lang="EN-US">CARGO</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">货船运送商品、紧急救援物资、旅行马戏团以及其他需要过海的物资。让船只的布局、种族构成和配置来导向船上的载货情况。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">大部分的船员和重要成员是<b>平民<span lang="EN-US">commoners</span></b>。带有贵重货物的船只可能会带上<span lang="EN-US">2d10</span>个<b>警卫<span lang="EN-US">guards</span></b>与一个 <b>老兵<span lang="EN-US">veteran</span></b>作为警卫队长。运送牲畜的货船可能会在他们的船员和乘客之外额外带有<b>山羊<span lang="EN-US">goats</span></b>、<b>骆驼<span lang="EN-US">camels</span></b>、<b>矮种马<span lang="EN-US">draft horses</span></b>、<b>驴<span lang="EN-US">mules</span></b>，以及其他兽类。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="10">运送乘客<span lang="EN-US">PASSENGER</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">客船携带着旅客们。这些船只被租用语旅行或者游玩、或运送难民、宗教传教士，或者其他和平团体前往重要的目的地。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">大部分的船员和重要成员是<b>平民<span lang="EN-US">commoners</span></b>。带有贵重人物的船只可能会带上<span lang="EN-US">2d10</span>个<b>警卫<span lang="EN-US">guards</span></b>与一个 <b>老兵<span lang="EN-US">veteran</span></b>作为警卫队长。尽管许多生物需要坐船旅行，船上额乘客一般由平民和贵族组成。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="10">捕鱼<span lang="EN-US">FISHING</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">捕鱼船包括捕捞鱼和甲壳类动物并在市场上出售的商业船只，捕鲸船，以及追踪鲨鱼、巨型章鱼和其他海洋怪物的狩猎船。任何为了利益、生存或运动而猎取海洋生物的船只都具有这个目的。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">大部分的商业捕鱼船上船员和重要成员都是<b>平民<span lang="EN-US">commoners</span></b>，但捕鲸船和狩猎活动的船只的队伍中则常常有<b>斥候<span lang="EN-US">scouts</span></b>相随。</p>
+<p class="10"><span lang="EN-US" style='FONT-SIZE: 10.5pt; FONT-FAMILY: "Calibri",sans-serif'></span> </p>
+<p class="10">军事用途<span lang="EN-US">MlLlTARY</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">军用船只运送士兵参战，并装备在海上作战的武器。这些船只追捕海盗，保卫和入侵领土，运载重要的政府货物，护送官员，运送囚犯，并做他们的指挥官所要求的任何事情。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">大部分军用船只上的船员都是<b>警卫<span lang="EN-US">guards</span></b>或者<b>斥候<span lang="EN-US">scouts</span></b>。重要成员由<b>老兵<span lang="EN-US">veterans</span></b>担任。许多军用船只载着额外的<b>警卫<span lang="EN-US">guards</span></b>，作为入侵、登船和操纵攻城武器的乘客。一艘军用船只也可能携带<span lang="EN-US">1d4</span>个<b>强盗<span lang="EN-US">bandits</span></b>或<b>守卫<span lang="EN-US">guards</span></b>作为囚犯。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="10">海盗<span lang="EN-US">PIRACY</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">海盗们走私违禁品并劫掠其他船只、海滨城镇和哨所。他们从事犯罪活动，但并非所有人都是邪恶的。许多海盗都有其道德规范。有些人以私掠者的身份为政府服务，只伤害他们的敌人，而另一些人则只抢劫腐败分子，把他们的不义之财送给穷人。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">大部分海盗船上的船员都是<b>强盗<span lang="EN-US">bandits</span></b>。重要成员则是<b>匪帮队长<span lang="EN-US">bandit 
+captains</span></b>，也可能包括一位<b>海盗船长<span lang="EN-US">pirate 
+captain</span></b>（见附录<span lang="EN-US">C</span>），一位<b>海盗水手长<span lang="EN-US">pirate bosun</span></b>（见附录<span lang="EN-US">C</span>）。许多海盗船还带着额外的<b>强盗<span lang="EN-US">bandit</span></b>以及至少一位<b>海盗甲板法师<span lang="EN-US">pirate deck 
+wizard</span></b>（见附录<span lang="EN-US">C</span>）作为乘客。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="10">佣兵<span lang="EN-US">MERCENARY</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">佣兵们环游世界寻找冒险和报酬。他们探索未知的领土，打仗，消灭怪物，护送特殊的货物或者人物，并会答应任何报酬合适的任务。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">佣兵船上有着与军用船只相似的船员或乘客。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="10">幽灵<span lang="EN-US">GHOST</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">幽灵船是携带亡灵船员的无实体船只。船员们通常以可怕的方式死去，却还有未竟的事业，这将他们束缚在物质位面。他们有时会为法师服务，但更常见的情况则是这些船员们没有主人。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">一艘幽灵船与其同一船舶类型的船只有着相同的数据，并具有如下变化：</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">·这艘船具有对如下伤害类型的抗性：强酸、火焰、闪电、以及雷鸣，还有非魔法武器攻击的钝击、穿刺和挥砍。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">·这艘船免疫冷冻、暗蚀、毒素以及心灵伤害。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">·这艘船能够如同穿过困难地形一样移动穿过其他生物和物件。如果它在自己回合结束时仍处在物体内部则受到<span lang="EN-US">5</span>（<span lang="EN-US">1d10</span>）点力场伤害。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">善良或中立的幽灵船上的船员和重要成员是<b>幽魂<span lang="EN-US">ghost</span></b>。在邪恶的幽灵船上，百分之九十的船员是<b>骷髅<span lang="EN-US">skeletons</span></b>和<b>僵尸<span lang="EN-US">zombies</span></b>（甚至两者的混合），百分之十是<b>恶灵<span lang="EN-US">specters</span></b>，其重要成员则是<b>邪灵<span lang="EN-US">wraiths</span></b>。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="2">态度与种族<span lang="EN-US">ATTITUDE AND RACE</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">每艘船的船员和乘客们都具有某种态度，指导他们如何与角色互动。友善的船只会寻求贸易或分享消息。中立态度船只如果感到威胁就会发起攻击，否则试图避免接触。而敌对船只则会试图攻击并夺取角色们的船。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">首先，根据船只态度表选择一种船只的态度或者掷骰，然后在对应的表格上掷骰决定船员的种类。选择或者掷骰生成的种族不一定是船上唯一的种族，你可以多次使用表格，来让船员与乘客更加多样化。如果你认为这更适合船上的种族，可以自由地将建议的数据替换成其他的数据（比如说，在一艘由兽人驾驶的海盗船上，将强盗<span lang="EN-US">bandit</span>的数据替换为兽人<span lang="EN-US">orc</span>的数据）。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>船只态度<span lang="EN-US">SHIP ATTITUDE</span></b></p>
+<p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm">
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">d6</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>态度<span lang="EN-US">Attitude</span></b></p></td></tr>
+<tr style="mso-yfti-irow: 1">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">1-2</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">友善<span lang="EN-US">Friendly</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 2">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">3-4</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">中立<span lang="EN-US">Neutral</span></p></td></tr>
+<tr style="mso-yfti-irow: 3; mso-yfti-lastrow: yes">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">5-6</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">敌对<span lang="EN-US">Hostile</span></span></p></td></tr></table></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>友善船只<span lang="EN-US">FRIENDLY  SHIP</span></b></p>
+<p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm">
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">d100</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>种族<span lang="EN-US">Race</span></b></p></td></tr>
+<tr style="mso-yfti-irow: 1">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">01-05</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">龙裔<span lang="EN-US">Dragonborn</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 2">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">06-10</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">矮人<span lang="EN-US">Dwarves</span></p></td></tr>
+<tr style="mso-yfti-irow: 3">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">11-30</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">精灵<span lang="EN-US">Elves</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 4">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">31-40</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">侏儒<span lang="EN-US">Gnomes</span></p></td></tr>
+<tr style="mso-yfti-irow: 5">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">41-50</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">提夫林<span lang="EN-US">Tieflings</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 6">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">51-60</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">半身人<span lang="EN-US">Halflings</span></p></td></tr>
+<tr style="mso-yfti-irow: 7; mso-yfti-lastrow: yes">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">61-00</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">人类<span lang="EN-US">Humans</span></span></p></td></tr></table></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US"></span></b> </p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>中立船只<span lang="EN-US">NEUTRAL  SHIP</span></b></p>
+<p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm">
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">d100</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>种族<span lang="EN-US">Race</span></b></p></td></tr>
+<tr style="mso-yfti-irow: 1">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">01-05</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">龙裔<span lang="EN-US">Dragonborn</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 2">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">06-10</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">矮人<span lang="EN-US">Dwarves</span></p></td></tr>
+<tr style="mso-yfti-irow: 3">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">11-30</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">蜥蜴人<span lang="EN-US">Lizardfolk</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 4">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">31-40</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">大地精<span lang="EN-US">Hobgoblins</span></p></td></tr>
+<tr style="mso-yfti-irow: 5">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">41-50</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">兽人<span lang="EN-US">Orcs</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 6">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">51-60</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">半身人<span lang="EN-US">Halflings</span></p></td></tr>
+<tr style="mso-yfti-irow: 7; mso-yfti-lastrow: yes">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">61-00</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">人类<span lang="EN-US">Humans</span></span></p></td></tr></table></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>敌对船只<span lang="EN-US">NEUTRAL  SHIP</span></b></p>
+<p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm">
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">d100</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>种族<span lang="EN-US">Race</span></b></p></td></tr>
+<tr style="mso-yfti-irow: 1">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">01-05</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">霜巨人<span lang="EN-US">Frost 
+  giant</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 2">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">06-10</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">狗头人<span lang="EN-US">Kobolds</span></p></td></tr>
+<tr style="mso-yfti-irow: 3">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">11-30</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">兽人<span lang="EN-US">Orcs</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 4">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">31-40</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">大地精<span lang="EN-US">Hobgoblins</span></p></td></tr>
+<tr style="mso-yfti-irow: 5">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">41-50</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">亡灵<span lang="EN-US">Undead</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 6">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">51-60</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">鬣狗人<span lang="EN-US">Gnolls</span></p></td></tr>
+<tr style="mso-yfti-irow: 7; mso-yfti-lastrow: yes">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">61-00</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">人类<span lang="EN-US">Humans</span></span></p></td></tr></table></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span lang="EN-US"></span> </p>
+<p class="2">船只倾向<span lang="EN-US">SHIP DISPOSITION</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">每艘船只都有一种倾向来决定当角色们遇到它的时候在船上发生的事件。根据船只倾向表格选择或者掷骰决定一种船只倾向。每一种倾向在表格后面都有描述。如果你骰出没有特殊倾向，这艘船则没有特别的压力，会根据其态度做出反应。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>船只倾向<span lang="EN-US">SHIP DISPOSITION</span></b></p>
+<p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm">
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">d6</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>倾向<span lang="EN-US">Disposition</span></b></p></td></tr>
+<tr style="mso-yfti-irow: 1">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">1</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">染病<span lang="EN-US">Diseased</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 2">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">2</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">紧急事件<span lang="EN-US">Emergency</span></p></td></tr>
+<tr style="mso-yfti-irow: 3">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">3</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">帮助实现目的<span lang="EN-US">Help with 
+      purpose</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 4">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">4</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">哗变<span lang="EN-US">Mutiny</span></p></td></tr>
+<tr style="mso-yfti-irow: 5">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">5</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">交易<span lang="EN-US">Trading</span></span></p></td></tr>
+<tr style="mso-yfti-irow: 6; mso-yfti-lastrow: yes">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">6-10</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">没有特殊倾向<span lang="EN-US">No special disposition</span></p></td></tr></table></p>
+<p class="10">染病<span lang="EN-US">DISEASED</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">骰一个百面骰。结果显示出这艘船的船员和乘客中感染一种你从《城主指南》的第八章“运作冒险<span lang="EN-US">Running the Game 
+</span>”里“范例疾病”中选择的疾病的百分比。这艘船驶向角色们，并开始要求他们帮助其控制感染状况。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">幽灵船不会染病，如果你对幽灵船骰出了这个结果，无视它并重新掷骰。</p>
+<p class="10">紧急事件<span lang="EN-US">EMERGENCY</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">一艘发生紧急事件的船只正遭受了某种危机。船员和乘客们乞求或者要求角色们的帮助来脱离这一状况。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">从船只紧急状况表格中选择或掷骰决定一种船只的危机。</p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>船只紧急事件<span lang="EN-US">SHIP EMERGENCY</span></b></p>
+<p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm">
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">D4</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">EMERGENCY</span></b></p></td></tr>
+<tr style="mso-yfti-irow: 1">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">1</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">这艘船的船员失踪了</span></p></td></tr>
+<tr style="mso-yfti-irow: 2">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">2</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">这艘船遭到了破坏，无法转向，只能随波逐流</p></td></tr>
+<tr style="mso-yfti-irow: 3">
+<td style="WIDTH: 111.75pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US" style="COLOR: black">3</span></b></p></td>
+<td style="WIDTH: 314.35pt; BACKGROUND: #d2eaf1; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><span style="COLOR: black">这艘船陷在了沙洲上</span></p></td></tr>
+<tr style="mso-yfti-irow: 4; mso-yfti-lastrow: yes">
+<td style="WIDTH: 111.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="149">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b><span lang="EN-US">4</span></b></p></td>
+<td style="WIDTH: 314.35pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="419">
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">这艘船正在沉没</p></td></tr></table></p>
+<p class="10">帮助实现目的<span lang="EN-US">HELP WITH PURPOSE</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">寻找能够帮助他们实现目的的船员们接近角色们，请求他们在任务中进行帮助。比如，佣兵们请求帮助绘制一处未经勘探区域的地图，货船上的船员们请求角色们担任护卫。大部分船员会提供报酬来换取角色们的服务，尽管一些困难会通过威胁或者乞求来希望得到无偿的帮助。</p>
+<p class="10">哗变<span lang="EN-US">MUTINY</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">准备哗变的船员们对他们上级的领导不满，并计划推翻他们。上级人物向角色们请求或要求帮助平息哗变，或者船员们请求帮助造反或者试图欺骗角色们杀死他们的上级。</p>
+<p class="10">交易<span lang="EN-US">TRADING</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">寻求交易的船员和乘客们用他们的货物或者服务换取行动、物品或者钱财。利用船的目的来导向他们必须要交易的东西。比如说，商业捕鱼者们可能会提供一箱子珍贵的螃蟹来换取一只一只对他们造成损失的鲨鱼的头颅，而海盗们则可能提供偷来的药水来换取宝石和黄金。大部分提供交易的人都愿意讨价还价。如果角色们拒绝交易，邪恶阵营的船员和乘客或许会发起攻击来得到他们想要的东西。</p>
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '随机船只'}, '*');
+        }
+</script>
+</body>
+</html>

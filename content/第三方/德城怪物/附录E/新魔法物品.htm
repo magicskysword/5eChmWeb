@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新魔法物品</title>
+    <link href="../../../style.css" rel="stylesheet"/>
+    <style>
+h1,h2,h3,U EM {
+    color: #512373;
+}
+h3{border-bottom: #512373 1px solid;margin-bottom:-10}
+UL,OL{
+margin-bottom:16px
+}
+</style>
+</head>
+<body>
+
+<h1>新魔法物品 New Magic Items</h1>
+<p>这些魔法物品以稀有度进行分类后，以首字母顺序排列。</p>
+
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '新魔法物品'}, '*');
+        }
+</script>
+</body>
+</html>

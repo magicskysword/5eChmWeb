@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纯空白页模板</title>
+    <link href="../../style.css" rel="stylesheet"/>
+    <style>
+h1{color:#971869}
+h3{BORDER-BOTTOM: #b79c61 1px solid;MARGIN-BOTTOM:-10px;}
+</style>
+</head>
+<body>
+
+
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '纯空白页模板'}, '*');
+        }
+</script>
+</body>
+</html>

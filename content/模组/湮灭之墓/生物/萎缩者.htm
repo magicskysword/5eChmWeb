@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>萎缩者</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:华文黑体;
+	mso-font-alt:黑体;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 131167 0 1442015 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"STHeiti light";
+	mso-font-alt:微软雅黑;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 16 0 262145 0;}
+@font-face
+	{font-family:黑体-简;
+	mso-font-alt:黑体;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 16 0 4063232 0;}
+@font-face
+	{font-family:"\@STHeiti light";
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 16 0 262145 0;}
+@font-face
+	{font-family:"\@华文黑体";
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 131167 0 1442015 0;}
+@font-face
+	{font-family:"\@黑体-简";
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 16 0 4063232 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 1 字符";
+	mso-style-next:正文;
+	margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:0cm;
+	line-height:240%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-out1ine-1evel:1;
+	font-size:22.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;
+	mso-font-kerning:22.0pt;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 2 字符";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-out1ine-1evel:2;
+	font-size:18.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+h4
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 4 字符";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-out1ine-1evel:4;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-noshow:yes;
+	mso-style-qformat:yes;
+	mso-style-link:"页眉 字符";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:12.0pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Cambria",serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 字符";
+	mso-style-next:正文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:none;
+	mso-out1ine-1evel:1;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 1";
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;
+	mso-bidi-font-family:宋体;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 2";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 4";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.a
+	{mso-style-name:"页眉 字符";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Cambria;
+	mso-font-kerning:1.0pt;}
+span.a0
+	{mso-style-name:"标题 字符";
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-locked:yes;
+	mso-style-link:标题;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.a1
+	{mso-style-name:"怪物名 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"标题 1 字符";
+	mso-style-link:怪物名;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:黑体;
+	mso-hansi-font-family:宋体;
+	mso-bidi-font-family:宋体;
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+p.a2, li.a2, div.a2
+	{mso-style-name:怪物名;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"标题 1";
+	mso-style-link:"怪物名 字符";
+	margin:0cm;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-out1ine-1evel:1;
+	font-size:22.0pt;
+	font-family:宋体;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:宋体;
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.a3
+	{mso-style-name:"怪物下拉 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"标题 2 字符";
+	mso-style-link:怪物下拉;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;
+	mso-bidi-font-family:宋体;
+	font-weight:bold;}
+p.a4, li.a4, div.a4
+	{mso-style-name:怪物下拉;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"标题 2";
+	mso-style-link:"怪物下拉 字符";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:21.0pt;
+	mso-margin-top-alt:auto;
+	mso-para-margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	mso-para-margin-left:2.0gd;
+	mso-pagination:widow-orphan;
+	mso-out1ine-1evel:2;
+	font-size:15.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;
+	font-weight:bold;}
+p.40, li.40, div.40
+	{mso-style-name:正文4;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	mso-para-margin-top:.2gd;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:.2gd;
+	mso-para-margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-line-height-alt:0pt;
+	mso-pagination:none;
+	punctuation-trim:leading;
+	font-size:10.5pt;
+	font-family:"Cambria",serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+p.a5, li.a5, div.a5
+	{mso-style-name:阵营;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	mso-para-margin-top:.2gd;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:.2gd;
+	mso-para-margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-line-height-alt:0pt;
+	mso-pagination:none;
+	punctuation-trim:leading;
+	font-size:8.0pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"Cambria",serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+</head>
+<body>
+
+<h2 style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 5pt 0pt; PADDING-RIGHT: 4pt; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 18pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; COLOR: rgb(192,0,0); mso-spacerun: 'yes'"><font face="微软雅黑">萎缩者</font></span></b><b><span style="FONT-SIZE: 18pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; COLOR: rgb(192,0,0); mso-spacerun: 'yes'"><font face="微软雅黑">ATROPAL</font></span></b><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-spacerun: 'yes'"></span></b></h2>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-INDENT: 18pt; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 2.0000"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">萎缩者</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">是一</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">位邪恶神祇未完成的可怕造物，</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">很久</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">之</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">前就被抛弃了。因为</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">萎缩者</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">从</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">未</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">真正活过，</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">所以</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">它</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">无法被任何方式</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">复活。即使</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">神圣干预</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">也</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">无法赐予</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">这</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">个</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">可恨</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">而</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">悲惨的恐怖</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">生物</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">真正的生命。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-INDENT: 18pt; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 2.0000"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">萎缩</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">者</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">是</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">一件</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">畸形</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">的</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">未完成</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">品</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">。它</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">那潮湿</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">、</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">褶皱而</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">浮肿的身</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">躯</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">上</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">顶</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">着一</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">个</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">没有毛</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">发</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">的</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">硕大</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">脑袋，一</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">双</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">呆滞</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">而茫然</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">的眼睛</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">长在脑袋上</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">。它不停地流</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">着</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">口水，</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">嘴中发出污秽之言</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">。它的胳膊</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">相当细长</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">，</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">微型</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">手</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">指</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">末端长着</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">异常锋利</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">的指甲。它从不走路，总是漂浮着，那萎缩的死腿</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">垂在身下</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">毫无用处。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-INDENT: 18pt; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 2.0000"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-spacerun: 'yes'"><font face="微软雅黑">负能量</font></span></b><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-spacerun: 'yes'"><font face="微软雅黑">链接</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">。萎缩</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">者那干瘪</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">的脐带似乎消失</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">在空中</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">。但实际上，它</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">链接了</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">负</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">能量位</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">面。这种联系</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">给了萎缩者掌控死亡与亡灵的力量。斩首</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">剑或其他</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">斩首</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">武器</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">可以</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">切断</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">脐带</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">，削弱萎缩</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">者</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">与负</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">能量位面</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">的联系。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-INDENT: 18pt; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 2.0000"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">萎缩者</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">可以召唤</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">死于</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">负</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">能量位面的</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">生物的残</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">留</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">，</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">并以邪灵形态表现出来</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">。这些仆从只能依靠</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">萎缩者</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">的意志存在于负</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">能量位面</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">外，当</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">萎缩者</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">被摧毁</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">时，它们将迅速</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">消失。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-INDENT: 18pt; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 2.0000"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-spacerun: 'yes'"><font face="微软雅黑">亡灵本质</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">。萎缩</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">者无需</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">空气</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">、饮食和</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"><font face="微软雅黑">睡眠。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-INDENT: 18pt; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 2.0000"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-INDENT: 18pt; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 2.0000"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 14pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; COLOR: rgb(192,0,0); mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">萎缩者</font></span></b><b><span style="FONT-SIZE: 14pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; COLOR: rgb(192,0,0); mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></b></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">巨型亡灵（泰坦），中立邪恶</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">AC</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"> <font face="微软雅黑">7</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">HP</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"> <font face="微软雅黑">225（18d12+108）</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">速度</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">0尺，飞行50尺（悬浮）</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">力量</font><font face="微软雅黑">19(+4)     敏捷5(-3) 
+    体质22(+6)     智力25(+7) 
+    感知19(+4) 
+    魅力24(+7)</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">豁免加值</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">：体质豁免</font><font face="微软雅黑">+11，感知豁免+9</font></span><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></b></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">伤害易伤</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">：光耀</font></span><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></b></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">伤害免疫</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">：寒冷，暗蚀，非魔法攻击的钝击、穿刺、挥砍</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">状态免疫</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">：力竭，恐慌，麻痹，中毒，倒地</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">感官</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">：黑暗视觉</font><font face="微软雅黑">120尺，真实视觉120尺，被动察觉14</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">语言</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">：理解天界语，但只会说出亵渎之语</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">CR</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">：</font><font face="微软雅黑">13（10,000 XP）</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">魔法抗性</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">。萎缩者进-抵抗法术和其他魔法效应的豁免检定时具有优势。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">负能量灵光</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">。萎缩者</font><font face="微软雅黑">30英尺范围内的生物无法恢复生命值。任何生物在萎缩者30英尺范围内开始其回合时，承受10（3d6）点暗蚀伤害。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 54pt; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 6.0000"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">如果它被</font></span><i><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; FONT-STYLE: italic; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">斩首剑</font> </span></i><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">击中，那么持用者可以选择切断它的脐带而非造成伤害。如果它的脐带被切断，则它失去该特质。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">抵抗驱散灵光</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">。萎缩者及其</font><font face="微软雅黑">30英尺内的所有亡灵为了抵抗驱散亡灵效应而进行的豁免检定具优势。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">动作</font></span></b><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></b></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">触击</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">。近战武器攻击：命中</font><font face="微软雅黑">+9，触及5英尺，单一目标。命中：10（3d6）点暗蚀伤害。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">凄冷射线</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">。远程法术攻击：命中</font><font face="微软雅黑">+12，触及120英尺，单一目标。命中：21（6d6）点寒冷伤害。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">生命汲取</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">。萎缩者指定</font><font face="微软雅黑">120英尺内它可以看见的一名生物为目标。目标必须进行一次DC 
+19的体质豁免，豁免失败则受到36(8d8)点暗蚀伤害，豁免成功则伤害减半。萎缩者恢复相当于该伤害一半的生命值。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">召唤邪灵</font><font face="微软雅黑">(充能6)</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">。萎缩者在</font><font face="微软雅黑">30英尺内一处它能看见的未占据空间中召唤出一只</font></span><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">邪灵</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">。邪灵服从召唤者的命令，无法被任何其他生物控制。当邪灵生命值降低至</font><font face="微软雅黑">0或召唤者死亡时，它会消失。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">传奇动作</font></span></b><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></b></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 18pt; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 2.0000"><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">萎缩者可以采取</font><font face="微软雅黑">3种传奇动作，从以下选项中选择。每次只能使用一个传奇动作选项，并且只能在另一个生物的回合结束时使用。萎缩者在其回合开始时重获所有传奇动作。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 18pt; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 2.0000"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">触击</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">。萎缩者进行一次触击攻击。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 18pt; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 2.0000"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">凄冷射线</font><font face="微软雅黑">(花费2动作)</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">。萎缩者发动它的凄冷射线。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p class="MsoNormal" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; LAYOUT-GRID-MODE: char; PADDING-BOTTOM: 1pt; TEXT-ALIGN: left; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; BORDER-LEFT: medium none; MARGIN: 0pt; PADDING-RIGHT: 4pt; TEXT-AUTOSPACE: ideograph-numeric; TEXT-INDENT: 18pt; mso-pagination: none; mso-border-bottom-alt: none; mso-border-right-alt: none; mso-border-left-alt: none; mso-border-top-alt: none; mso-char-indent-count: 2.0000"><b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: bold; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">恸哭</font><font face="微软雅黑">(花费3动作)</font></span></b><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"><font face="微软雅黑">。萎缩者发出一声凄厉的恸哭。任何距离萎缩者120尺范围内且能听到其恸哭的生物必须进行DC 
+19的体质豁</font><font face="微软雅黑"> 
+免，豁免失败则增加1级力竭。</font></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 微软雅黑; FONT-WEIGHT: normal; mso-font-kerning: 1.0000pt; mso-spacerun: 'yes'"></span></p>
+<p><!--EndFragment--></p>
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '萎缩者'}, '*');
+        }
+</script>
+</body>
+</html>

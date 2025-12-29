@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>状态</title>
+    <link href="../../style.css" rel="stylesheet"/>
+</head>
+<body>
+<h2>状态 Conditions</h2>
+<p>许多效应会强加某种状态，暂时影响受状态者的能力。下列状态的具体定义详见术语汇编。 
+<table border="0" cellpadding="2" cellspacing="0" style="WIDTH: 300px; BORDER-COLLAPSE: collapse; TEXT-ALIGN:  
+ center">
+<tr><td><u>目盲</u></td><td><u>受擒</u></td><td><u>中毒</u></td></tr>
+<tr bgcolor="#eeeeee"><td><u>魅惑</u></td><td><u>失能</u></td><td><u>倒地</u></td></tr>
+<tr><td><u>耳聋</u></td><td><u>隐形</u></td><td><u>束缚</u></td></tr>
+<tr bgcolor="#eeeeee"><td><u>力竭</u></td><td><u>麻痹</u></td><td><u>震慑</u></td></tr>
+<tr><td><u>恐慌</u></td><td><u>石化</u></td><td><u>昏迷</u></td></tr></table></p>
+<p>状态的定义会说明受状态者受其影响期间所发生的事，以及某些状态是否会导致其他状态。</p>
+<h3>持续时间 Duration</h3>
+<p>状态会持续到施加该状态的效应所说明的持续时间结束或者直到该状态被解除（例如<u>倒地</u>状态会在站起来时解除）</p>
+<h3>状态不叠加 No Stacking</h3>
+<p>如果多个效应施加给你同样的状态，每个状态都会分别计算其持续时间，但是状态的效果不会变得更强。也就是说，状态只存在有和没有的差别。<u>力竭</u>状态除外，当你处于力竭状态并再次陷入该状态时，力竭的效果会变得更强。</p>
+
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '状态'}, '*');
+        }
+</script>
+</body>
+</html>

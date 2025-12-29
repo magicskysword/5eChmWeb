@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聚落</title>
+    <style>
+html,body { 
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<p><strong><font color="#800000" size="5">聚落Settlements</font></strong></p>
+<p>战役所发生的世界通常存在许多聚落。角色们可以抵达这些地方，甚至还可能将某个聚落作为基地，并在达到足够等级之后在其中或附近建设他们的据点（见第八章）。<br/>基于规模的聚落表给出了村庄、小镇还有城市的建议人口范围，以及每种规模的聚落的交易限额。这些数据皆可根据当地情况而酌情调整。举例而言，一瓶治疗药水（售价50GP）超过了大多数村庄的交易限额，所以通常无法在村庄中购入；不过若是村子里住着一位炼金术士、草药学家或药水酿造师，那在这里就说不定能买到一两瓶治疗药水。</p>
+<p><strong>基于规模的聚落 Settlements by Sizes</strong></p>
+<p>
+<table border="0" bordercolor="#000000" cellpadding="3" cellspacing="0" style="WIDTH: 99%; BORDER-COLLAPSE: collapse" width="99%">
+<tr>
+<td bgcolor="#f5c589">
+<p align="center"> <strong>聚落</strong></p></td>
+<td bgcolor="#f5c589">
+<p align="center"><strong> 人口规模</strong></p></td>
+<td bgcolor="#f5c589">
+<p align="center"><strong> 交易限额</strong></p></td></tr>
+<tr>
+<td>
+<p align="center"> 村庄</p></td>
+<td>
+<p align="center"> 至多500 </p></td>
+<td>
+<p align="center"> 20GP</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb">
+<p align="center"> 小镇</p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 501-5000 </p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 2000GP</p></td></tr>
+<tr>
+<td>
+<p align="center"> 城市</p></td>
+<td>
+<p align="center"> 5001或更多</p></td>
+<td>
+<p align="center"> 200000GP</p></td></tr></table></p>
+<h3><font color="#800000">聚落表格及跟进卡Settlement Tables and 
+Tracker</font></h3>
+<p>下列表格可以帮助你设计聚落的细节。你可以使用附带的聚落跟进卡来记录战役中的一座村庄、小镇或城市的关键信息</p>
+<p>
+<table bgcolor="#fffbf0" border="1" bordercolor="#000000" cellpadding="2" cellspacing="0" style="WIDTH: 99%; BORDER-COLLAPSE: collapse" width="99%">
+<tr>
+<td>
+<h3>
+<font color="#800000">
+      边栏：<font color="#800000">我需要画地图吗？Do I Need a Settlement Map？</font></font></h3>
+<p>
+<font style="BACKGROUND-COLOR: #fffbf0">并不是每个聚落都需要一份地图。通常来说，只需要简单和玩家描述一下聚落的情况便足够了。但若是想让玩家记住特定的建筑或某些其他地点在聚落中的位置，那地图便派上用场了。<br/>附录B的十字路口村庄便是一份范例聚落地图。</font></p></td></tr></table></p>
+<p><strong>重要特征Defining Traits</strong></p>
+<p>
+<table border="0" bordercolor="#000000" cellpadding="3" cellspacing="0" style="WIDTH: 99%; BORDER-COLLAPSE: collapse" width="99%">
+<tr>
+<td bgcolor="#f5c589" width="10%">
+<p align="center"> <strong>d20</strong></p></td>
+<td bgcolor="#f5c589">
+<p align="center"><strong> 特征</strong></p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 1-2</p></td>
+<td>
+<p align="center">格外坚实的城墙</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 3-4</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">众多花园、公园和绿地</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 5-6</p></td>
+<td>
+<p align="center">遍布污泥、秽物与垃圾</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 7-8</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">范围广阔的墓地</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 9-10</p></td>
+<td>
+<p align="center">始终笼罩在雾气中</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 11-12</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">铁匠铺与锻造厂中的噪音与烟云</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 13</p></td>
+<td>
+<p align="center">运河与桥梁</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 14</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">一侧或多侧是悬崖</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 15-16</p></td>
+<td>
+<p align="center">整洁的街道与维护良好的建筑</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 17-18</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">聚落之内的古老遗迹</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 19-20</p></td>
+<td>
+<p align="center">某种宏伟的结构（如城堡、神殿、巨石阵、塔庙）</p></td></tr></table></p>
+<p><br/>闻名于……Claims to Fame</p>
+<p>
+<table border="0" bordercolor="#000000" cellpadding="3" cellspacing="0" style="WIDTH: 99%; BORDER-COLLAPSE: collapse" width="99%">
+<tr>
+<td bgcolor="#f5c589" width="10%">
+<p align="center"> <strong>d20</strong></p></td>
+<td bgcolor="#f5c589">
+<p align="center"><strong> 闻名于……</strong></p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 1</p></td>
+<td>
+<p align="center">美食</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 2</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">民风恶劣</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 3</p></td>
+<td>
+<p align="center">民风淳朴</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 4</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">艺术家或作家</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 5</p></td>
+<td>
+<p align="center">伟大英雄/救世主</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 6</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">花卉</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 7</p></td>
+<td>
+<p align="center">季节性节日</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 8</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">闹鬼</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 9</p></td>
+<td>
+<p align="center">施法者</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 10</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">衰落</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 11</p></td>
+<td>
+<p align="center">虔信</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 12</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">博彩</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 13</p></td>
+<td bgcolor="#ffffff">
+<p align="center">不信神</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 14</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">教育</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 15</p></td>
+<td bgcolor="#ffffff">
+<p align="center">葡萄酒</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 16</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">高档时装</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 17</p></td>
+<td bgcolor="#ffffff">
+<p align="center">政治阴谋</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 18</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">强大的行会</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 19</p></td>
+<td bgcolor="#ffffff">
+<p align="center">爱国</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 20</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">古老遗迹</p></td></tr></table></p>
+<p><br/><strong>当前遭受的灾难Current 
+Calamities</strong> </p>
+<p>
+<table border="0" bordercolor="#000000" cellpadding="3" cellspacing="0" style="WIDTH: 99%; BORDER-COLLAPSE: collapse" width="99%">
+<tr>
+<td bgcolor="#f5c589" width="10%">
+<p align="center"> <strong>d12</strong></p></td>
+<td bgcolor="#f5c589">
+<p align="center"><strong> 灾难</strong></p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 1</p></td>
+<td>
+<p align="center">怪物在聚落中滋生</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 2</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">一位关键人物逝世；这疑似是一场谋杀</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 3</p></td>
+<td>
+<p align="center">敌对的行会或帮派间正在谋划着战争</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 4</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">瘟疫或饥荒引发了骚乱</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 5</p></td>
+<td>
+<p align="center">怪物袭击着所有试图进入或离开聚落的人</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 6</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">贸易纠纷导致的经济困难</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 7</p></td>
+<td>
+<p align="center">一场威胁着聚落的自然灾害</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 8</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">一道末日预言，使得居民深陷紧张之中</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 9</p></td>
+<td>
+<p align="center">当地人被征召参加一场战争</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 10</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">政治或宗教冲突，很可能导致暴力事件</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 11</p></td>
+<td>
+<p align="center">聚落正在被围攻</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 12</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">威胁着当地大家族的丑闻</p></td></tr></table></p>
+<p><strong>当地领袖Local Leaders</strong></p>
+<p>
+<table border="0" bordercolor="#000000" cellpadding="3" cellspacing="0" style="WIDTH: 99%; BORDER-COLLAPSE: collapse" width="99%">
+<tr>
+<td bgcolor="#f5c589" width="10%">
+<p align="center"> <strong>d12</strong></p></td>
+<td bgcolor="#f5c589">
+<p align="center"><strong> 领袖</strong></p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 1</p></td>
+<td>
+<p align="center">受人敬仰、公平公正的领袖或议会</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 2</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">受人恐惧的暴君</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 3</p></td>
+<td>
+<p align="center">受人操控的懦弱傀儡</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 4</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">造成了动乱的非法继任者</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 5</p></td>
+<td>
+<p align="center">强大的怪物</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 6</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">神秘莫测的阴谋家</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 7</p></td>
+<td>
+<p align="center">受抗议的领袖（有公开暴力事件）</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 8</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">执着于争吵的议会，难以做出决策</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 9</p></td>
+<td>
+<p align="center">愚钝的莽夫</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 10</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">快要离世的领袖（继任者未定）</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 11</p></td>
+<td>
+<p align="center">意志坚定且受人尊敬的领袖或议会</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 12</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">宗教领袖或议会</p></td></tr></table></p>
+<p><br/><strong>酒馆名称Taven 
+Names*</strong> </p>
+<p>
+<table border="0" bordercolor="#000000" cellpadding="3" cellspacing="0" style="WIDTH: 99%; BORDER-COLLAPSE: collapse" width="99%">
+<tr>
+<td bgcolor="#f5c589" width="10%">
+<p align="center"> <strong>d20</strong></p></td>
+<td bgcolor="#f5c589">
+<p align="center"><strong>第一部分</strong></p></td>
+<td bgcolor="#f5c589">
+<p align="center"><strong> 第二部分</strong></p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 1</p></td>
+<td>
+<p align="center">黄金/金色The Golden</p></td>
+<td>
+<p align="center"> 里拉琴Lyre</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 2</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">白银/银色The Silver</p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 海豚Dolphin</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 3</p></td>
+<td>
+<p align="center">年轻的/面无胡须之The Beardless</p></td>
+<td>
+<p align="center"> 矮人Dwarf</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 4</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">狂笑The Laughing</p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 天马Pegasus</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 5</p></td>
+<td>
+<p align="center">舞动的The Dancing</p></td>
+<td>
+<p align="center"> 小屋Hut</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 6</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">镀金The Gilded</p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 玫瑰Rose</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 7</p></td>
+<td>
+<p align="center">绊脚The Stumbling</p></td>
+<td>
+<p align="center"> 雄鹿Stag</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 8</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">狼与The Wolf and</p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 鸭子Duck</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 9</p></td>
+<td>
+<p align="center">堕落/陨落The Fallen</p></td>
+<td>
+<p align="center"> 羔羊Lamb</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 10</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">下流的The Leering</p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 恶魔Demon</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 11</p></td>
+<td>
+<p align="center">醉酒的The Drunken</p></td>
+<td>
+<p align="center"> 山羊Goat</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 12</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">葡萄酒与The Wine and</p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 魂灵Spirit</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 13</p></td>
+<td bgcolor="#ffffff">
+<p align="center">咆哮的The Roaring</p></td>
+<td bgcolor="#ffffff">
+<p align="center"> 宝山/战团/部落Horde</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 14</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">忧虑的The Frowning</p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 弄臣Jester</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 15</p></td>
+<td bgcolor="#ffffff">
+<p align="center">酒桶与The Barrel and</p></td>
+<td bgcolor="#ffffff">
+<p align="center"> 桶Bucket</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 16</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">饥渴The Thirsty</p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 乌鸦Crow</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 17</p></td>
+<td bgcolor="#ffffff">
+<p align="center">漫游之The Wandering</p></td>
+<td bgcolor="#ffffff">
+<p align="center"> 半羊人Satyr</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 18</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">狂吠的The Barking</p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 狗狗Dog</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 19</p></td>
+<td bgcolor="#ffffff">
+<p align="center">开心The Happy</p></td>
+<td bgcolor="#ffffff">
+<p align="center"> 蜘蛛Spider</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 20</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">女巫与The Witch and</p></td>
+<td bgcolor="#ebebeb">
+<p align="center"> 巨龙Dragon</p></td></tr></table></p>
+<p>*名字的每部分都要单独投掷</p>
+<p><strong>随机店铺Radom Shops</strong></p>
+<p>
+<table border="0" bordercolor="#000000" cellpadding="3" cellspacing="0" style="WIDTH: 99%; BORDER-COLLAPSE: collapse" width="99%">
+<tr>
+<td bgcolor="#f5c589" width="10%">
+<p align="center"> <strong>d20</strong></p></td>
+<td bgcolor="#f5c589">
+<p align="center"><strong>类型</strong></p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 1</p></td>
+<td>
+<p align="center">当铺Pawnshop</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 2</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">药剂店Apothecary</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 3</p></td>
+<td>
+<p align="center">（食品）杂货店Grocer</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 4</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">熟食店Delicatessen</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 5</p></td>
+<td>
+<p align="center">陶艺店Potter</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 6</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">殡仪馆Undertaker</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 7</p></td>
+<td>
+<p align="center">书店Bookstore</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 8</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">放债铺Moneylender</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 9</p></td>
+<td>
+<p align="center">盔甲商Armorer</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 10</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">（船具）杂货店Chandler</p></td></tr>
+<tr>
+<td width="10%">
+<p align="center"> 11</p></td>
+<td>
+<p align="center">铁匠铺Smithy</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 12</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">木工坊Carpenter</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 13</p></td>
+<td bgcolor="#ffffff">
+<p align="center">织物店Weaver</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 14</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">珠宝店Jeweler</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 15</p></td>
+<td bgcolor="#ffffff">
+<p align="center">面包房Baker</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 16</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">制图店Mapmaker</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 17</p></td>
+<td bgcolor="#ffffff">
+<p align="center">裁缝店Tailor</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 18</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">绳店Ropemaker</p></td></tr>
+<tr>
+<td bgcolor="#ffffff" width="10%">
+<p align="center"> 19</p></td>
+<td bgcolor="#ffffff">
+<p align="center">石匠坊Mason</p></td></tr>
+<tr>
+<td bgcolor="#ebebeb" width="10%">
+<p align="center"> 20</p></td>
+<td bgcolor="#ebebeb">
+<p align="center">抄写屋Scribe</p></td></tr></table></p>
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '聚落'}, '*');
+        }
+</script>
+</body>
+</html>
