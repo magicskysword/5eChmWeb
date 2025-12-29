@@ -1,6 +1,7 @@
 // ===== 应用状态 =====
 const state = {
     currentPath: null,
+    currentAnchor: null,
     theme: localStorage.getItem('theme') || 'light',
     sidebarCollapsed: false,
     bookmarks: JSON.parse(localStorage.getItem('bookmarks') || '[]'),
@@ -321,8 +322,9 @@ function highlightText(text, query) {
 }
 
 // ===== 内容加载 =====
-function loadContent(path, scrollToText = null) {
+function loadContent(path, scrollToText = null, anchor = null) {
     state.currentPath = path;
+    state.currentAnchor = anchor; // 保存锚点信息
     
     // 更新活动状态
     document.querySelectorAll('.toc-file').forEach(file => {
@@ -344,8 +346,40 @@ function loadContent(path, scrollToText = null) {
         setTimeout(() => {
             const injected = injectIframeScript();
             
+            // 如果有锚点，滚动到对应位置
+            if (anchor && injected) {
+                setTimeout(() => {
+                    try {
+                        const iframeWin = elements.contentFrame.contentWindow;
+                        const iframeDoc = elements.contentFrame.contentDocument;
+                        if (iframeDoc && anchor) {
+                            // 移除开头的 # 获取id
+                            const anchorId = anchor.startsWith('#') ? anchor.substring(1) : anchor;
+                            // 尝试多种方式查找元素
+                            let targetElement = iframeDoc.getElementById(anchorId);
+                            if (!targetElement) {
+                                // 尝试通过name属性查找
+                                targetElement = iframeDoc.querySelector(`[name="${anchorId}"]`);
+                            }
+                            if (!targetElement) {
+                                // 尝试通过 CSS 选择器（处理特殊字符）
+                                try {
+                                    targetElement = iframeDoc.querySelector(`#${CSS.escape(anchorId)}`);
+                                } catch (e) {
+                                    // CSS.escape 可能不存在于旧浏览器
+                                }
+                            }
+                            if (targetElement) {
+                                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }
+                        }
+                    } catch (e) {
+                        console.error('Failed to scroll to anchor:', e);
+                    }
+                }, 150);
+            }
             // 如果需要滚动到书签位置
-            if (scrollToText && injected) {
+            else if (scrollToText && injected) {
                 // 等待脚本初始化完成后再发送消息
                 setTimeout(() => {
                     try {
@@ -382,8 +416,9 @@ function loadContent(path, scrollToText = null) {
     // 更新面包屑
     updateBreadcrumb(path);
     
-    // 更新URL
-    history.pushState({path}, '', '#' + path);
+    // 更新URL（包含锚点）
+    const urlHash = anchor ? '#' + path + anchor : '#' + path;
+    history.pushState({path, anchor}, '', urlHash);
     
     // 移动端关闭侧边栏
     if (window.innerWidth <= 768) {
@@ -501,6 +536,110 @@ function createIframeScript() {
     let selectionTimeout;
     let lastMouseX = 0;
     let lastMouseY = 0;
+    
+    // ===== 链接拦截处理 =====
+    // 拦截页面内的链接点击，修正跳转路径
+    document.addEventListener('click', function(e) {
+        // 查找最近的 <a> 标签
+        const link = e.target.closest('a');
+        if (!link) return;
+        
+        const href = link.getAttribute('href');
+        if (!href) return;
+        
+        // 跳过锚点链接（仅#开头，不含路径）
+        if (href.startsWith('#') && !href.includes('/')) {
+            return; // 让页面内锚点跳转正常工作
+        }
+        
+        // 跳过外部链接
+        if (href.startsWith('http://') || href.startsWith('https://') || href.startsWith('//')) {
+            return;
+        }
+        
+        // 跳过 javascript: 和 mailto: 链接
+        if (href.startsWith('javascript:') || href.startsWith('mailto:')) {
+            return;
+        }
+        
+        // 阻止默认行为
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // 解析链接路径和锚点
+        let targetPath = href;
+        let anchor = '';
+        
+        const hashIndex = href.indexOf('#');
+        if (hashIndex !== -1) {
+            targetPath = href.substring(0, hashIndex);
+            anchor = href.substring(hashIndex); // 包含 #
+        }
+        
+        // 处理绝对路径（以 / 开头）
+        if (targetPath.startsWith('/')) {
+            targetPath = targetPath.substring(1); // 移除开头的 /
+        }
+        
+        // 处理相对路径
+        if (!targetPath.startsWith('/')) {
+            // 获取当前页面路径
+            const currentPath = window.location.pathname;
+            const currentDir = currentPath.substring(0, currentPath.lastIndexOf('/') + 1);
+            
+            // 如果是相对路径，需要解析相对于当前目录
+            if (targetPath.startsWith('./')) {
+                targetPath = targetPath.substring(2);
+            }
+            
+            // 处理 ../ 相对路径
+            if (targetPath.startsWith('../')) {
+                let basePath = currentDir;
+                let relPath = targetPath;
+                
+                while (relPath.startsWith('../')) {
+                    relPath = relPath.substring(3);
+                    // 移除最后一个目录
+                    basePath = basePath.substring(0, basePath.lastIndexOf('/', basePath.length - 2) + 1);
+                }
+                
+                targetPath = basePath + relPath;
+                // 移除开头的 /
+                if (targetPath.startsWith('/')) {
+                    targetPath = targetPath.substring(1);
+                }
+            } else if (!targetPath.includes('/') || targetPath.startsWith('./')) {
+                // 同目录下的文件
+                // 从当前路径提取目录部分（相对于content）
+                // 当前iframe的src类似 content/xxx/yyy.html
+                // 我们需要获取 xxx/ 部分
+                const contentPrefix = 'content/';
+                let idx = currentPath.indexOf(contentPrefix);
+                if (idx !== -1) {
+                    const afterContent = currentPath.substring(idx + contentPrefix.length);
+                    const lastSlash = afterContent.lastIndexOf('/');
+                    if (lastSlash !== -1) {
+                        targetPath = afterContent.substring(0, lastSlash + 1) + targetPath;
+                    }
+                }
+            }
+        }
+        
+        // 确保路径不以 content/ 开头（稍后会添加）
+        if (targetPath.startsWith('content/')) {
+            targetPath = targetPath.substring(8);
+        }
+        
+        // 构建完整的content路径
+        const fullPath = 'content/' + targetPath;
+        
+        // 通知父页面加载新内容
+        window.parent.postMessage({
+            type: 'navigateToContent',
+            path: fullPath,
+            anchor: anchor
+        }, '*');
+    }, true); // 使用捕获阶段
     
     // 获取节点的XPath路径
     function getXPath(node) {
@@ -873,12 +1012,15 @@ function renderBookmarks() {
 function initNavigation() {
     const hash = window.location.hash.slice(1);
     if (hash) {
-        loadContent(hash);
+        // 解析 hash 中的路径和锚点
+        // 格式可能是: content/path/file.html#anchor 或 content/path/file.html
+        const parsed = parseHashWithAnchor(hash);
+        loadContent(parsed.path, null, parsed.anchor);
     }
     
     window.addEventListener('popstate', (e) => {
         if (e.state && e.state.path) {
-            loadContent(e.state.path);
+            loadContent(e.state.path, null, e.state.anchor || null);
         }
     });
     
@@ -887,8 +1029,35 @@ function initNavigation() {
             syncThemeToIframe();
         } else if (e.data.type === 'requestTheme') {
             syncThemeToIframe();
+        } else if (e.data.type === 'navigateToContent') {
+            // 处理iframe内链接点击的导航请求
+            loadContent(e.data.path, null, e.data.anchor || null);
         }
     });
+}
+
+/**
+ * 解析带锚点的 hash
+ * 输入: "content/path/file.html#anchor" 或 "content/path/file.html"
+ * 输出: { path: "content/path/file.html", anchor: "#anchor" 或 null }
+ */
+function parseHashWithAnchor(hash) {
+    // 先检查是否是 content/ 开头
+    if (!hash.startsWith('content/')) {
+        return { path: hash, anchor: null };
+    }
+    
+    // 查找 .html# 或 .htm# 的位置（文件扩展名后的锚点）
+    const htmlAnchorMatch = hash.match(/\.(html?)(#.*)$/i);
+    if (htmlAnchorMatch) {
+        const anchorIndex = hash.lastIndexOf('#');
+        return {
+            path: hash.substring(0, anchorIndex),
+            anchor: hash.substring(anchorIndex)
+        };
+    }
+    
+    return { path: hash, anchor: null };
 }
 
 function syncThemeToIframe() {
